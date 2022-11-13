@@ -1,0 +1,401 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(1.gif);
+    background-size: cover;
+}
+
+#contenedor-principal{
+    display: flex;
+    text-align: justify;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-size: cover;
+    position: relative;
+}
+
+#contenedor1{
+    width: 20%;
+    height: 100%;
+    min-width: 150px;
+    align-items: center;
+    margin-right: 10px;
+    float: left    
+}
+
+#perfil{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(47, 34, 59, 0.801);
+    box-shadow: 0 5px 10px rgba(29, 28, 90, 0.603);
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+    color: aliceblue;
+    overflow: hidden;
+    padding-top: 10px;
+    margin: 0px 10%;
+
+    
+}
+
+@media screen and (max-width: 1000px) {
+    #perfil{
+        padding-top: 12px;
+        height: 150px;
+}
+}
+
+
+#perfil img{
+    border-radius: 100%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.401);
+    width: 100%;
+}
+
+#perfil h1{
+    font-size: large;
+    
+}
+
+#FotoPerfil{
+    width: 150px;
+    align-content: center;
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    vertical-align: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    #FotoPerfil{
+        width: 100px;
+}
+}
+
+#listachats{
+    background-color: rgba(47, 34, 59, 0.801);
+    box-shadow: 0 5px 10px rgba(29, 28, 90, 0.603);
+    border-radius: 20px;
+    width: 100%;
+    height: 335px;
+    margin-top: 15px;
+    padding: 5px 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    #listachats{
+        height: 385px;
+}
+}
+
+div .boton{
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(29, 28, 90, 0.603);
+    border-radius: 10px;
+    width: 90%;
+    height: 15%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 3px 5px;
+    align-content: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    div .boton{
+        padding: 3px 3px;
+}
+}
+
+div .boton:hover{
+            background-color: rgb(174, 178, 182);
+            cursor: pointer;
+}
+
+#imagen img{
+    float: left;
+    border-radius: 50%;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.401);
+}
+
+label h2{
+    font-size: 13px;
+    margin-top: 1vw;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: center;
+    margin: auto;
+    padding: 10px;
+    color: rgb(25, 67, 51);
+}
+
+label h2:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+    label h2{
+        font-size: 18px;
+}
+}
+       
+.chat{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 34, 59, 0.801);
+    box-shadow: 0 5px 10px rgba(29, 28, 90, 0.603);
+    border-radius: 20px;
+    width: 985px;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+   
+}
+
+/* INSTRUCCIONES-DERECHA */
+#contenedor0{
+    padding-top: 25px;
+    border-radius: 20px;
+    width: 75%;
+    min-width: 300px;
+    text-align: center;
+    background-color: rgba(47, 34, 59, 0.801);
+    box-shadow: 0 5px 10px rgba(29, 28, 90, 0.603);
+    float: right
+}
+
+#relleno{
+    vertical-align: middle;
+    padding: 5px;
+    margin: auto;
+    background-color: #92bccb;
+    height: 95%;
+    width: 95%;
+    min-height: 500px;
+}
+
+#relleno h1{
+    font-size: 18px;
+    color: rgb(106, 75, 135);
+}
+
+#relleno h2{
+    line-height: 30px;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+/* CONTENIDO-CHATS */
+
+.checkbox{
+    display: none;
+}
+
+header{
+    background-color: rgb(29, 73, 56);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 95px;
+    padding: 5px 10px;
+}
+
+header #izquierda{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+header #derecha{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+header #izquierda img{
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.401);
+    margin-right: 10px;
+    float: left;
+}
+
+header #izquierda h3{
+    line-height: 12vh;
+    margin: auto;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+nav{
+    margin: 0%;
+    margin-top: 330px;
+    background-color: rgb(29, 73, 56);
+    height: 125px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+}
+
+nav #mensaje{
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(129, 129, 129);
+}
+
+nav #mensaje{
+    cursor: text;
+}
+
+form input{
+    background-color: aliceblue;
+    box-shadow: 0 5px 10px rgba(29, 28, 90, 0.603);
+    border-radius: 10px;
+    border: none;
+    width: 800px;
+    height: 35px;
+    padding: 3px 5px;
+    align-content: center;
+    float: left;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.contenido{
+    width: 90%;
+    max-width: 900px;
+    height: 550px;
+    background-image: url(3.png);
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+
+.contenido .btn-cerrar{
+    line-height: 35px;
+    color: rgb(63, 63, 63);
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    padding: 3px 5px;
+    float: right;
+    text-align: center;
+}
+
+.contenido .btn-cerrar:hover{
+            background-color: rgb(174, 178, 182);
+            cursor: pointer;
+}
+
+/* CHATS */
+
+#chat1{
+    background-color: rgba(47, 34, 59, 0.801);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#chat2{
+    background-color: rgba(47, 34, 59, 0.801);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#chat3{
+    background-color: rgba(47, 34, 59, 0.801);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#chat4{
+    background-color: rgba(47, 34, 59, 0.801);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#chat5{
+    background-color: rgba(47, 34, 59, 0.801);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/* FUNCION BOTONES */
+
+#btn1:checked ~ #chat1{
+    display: flex;
+}
+
+#btn2:checked ~ #chat2{
+    display: flex;
+}
+
+#btn3:checked ~ #chat3{
+    display: flex;
+}
+
+#btn4:checked ~ #chat4{
+    display: flex;
+}
+
+#btn5:checked ~ #chat5{
+    display: flex;
+}
+
+#btn6:checked ~ #chat6{
+    display: flex;
+}

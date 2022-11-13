@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(1.gif);
+    background-size: cover;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(47, 34, 59, 0.801);
+    text-align: center;
+    padding: 55px 25px;
+    box-shadow: 0 5px 10px rgba(29, 28, 90, 0.603);
+    border-radius: 20px;
+}
+
+
+form .title{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+
+
+form label{
+    /* margen de todo lo que contiene el cuadro */
+    margin-bottom: 35px;
+}
+
+form label input{
+    /* usuario y contra */
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+form label input::placeholder{
+    /* letras de usuario y contra dentro de los cuadros */
+    font-size: 15px;
+    color: rgb(112, 155, 140);
+}
+
+
+form button{
+    align-self: center;
+    color: rgba(47, 34, 59, 0.801);
+    background-color: rgb(60, 129, 75);
+    border: none;
+    border-radius: 20px;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    width: 75px;
+}
+
+form button:hover{
+    /* cambio a boton al poner encima el click */
+    background-color: rgb(102, 173, 118);
+    font-size: 14px;
+    padding: 5px 2px;
+}
