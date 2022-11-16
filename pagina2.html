@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlumbleeGreen Chat</title>
-    <link rel="stylesheet" href="pagina1.css">
+    <link rel="stylesheet" href="pagina2.css">
     <link rel="icon" href="2.png">
     
 </head>
@@ -52,6 +52,10 @@
                 <form id="usuario">
                     <h2>Mamá</h2>
                 </form>
+
+                <div id="noti">
+                    <img src="Noti.png" alt="notificación">
+                </div>
 
             </label>
         </form>
@@ -117,7 +121,7 @@
 
 <!-- CHECKBOX -->
 <input type="checkbox" id="btn1" class="checkbox">
-<input type="checkbox" id="btn2" class="checkbox">
+<input type="checkbox" id="btn2" class="checkbox" onclick="ocultar();">
 <input type="checkbox" id="btn3" class="checkbox">
 <input type="checkbox" id="btn4" class="checkbox">
 <input type="checkbox" id="btn5" class="checkbox">
@@ -179,11 +183,20 @@
 
     <nav>
 
-        <div id="enviar">
-            <img src="chat1.png" alt="Archivos" id="mensaje1">
+        <div id="recibir1">
+            <img src="chat2.png" alt="Mensaje" id="mensaje1">
         </div>
-        <div id="recibir">
-            <img src="chat2.png" alt="Mensaje" id="mensaje2">
+
+        <div id="recibir2">
+            <img src="chat3.png" alt="Mensaje" id="mensaje2">
+        </div>
+
+        <div id="enviar">
+            <img src="chat4.png" alt="Archivos" id="mensaje3">
+        </div>
+
+        <div id="recibir3">
+            <img src="chat5.png" alt="Mensaje" id="mensaje4">
         </div>
     
     </nav>
@@ -194,7 +207,7 @@
             </div>
 
             <div id="CajaOpciones">
-                <button id="uno" onclick="mostrar();">Enviar archivos</button>
+                <button id="uno" onclick="mostrar();">¿Que pasó?</button>
             </div>
         </footer>
     </div>
@@ -297,6 +310,6 @@
 
 </div>
 
-<script src="pagina1.js"></script>
+<script src="pagina2.js"></script>
 </body>
 </html>

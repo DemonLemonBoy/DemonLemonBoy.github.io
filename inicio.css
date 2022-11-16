@@ -20,6 +20,8 @@ body
 form{
     display: flex;
     flex-direction: column;
+    width: 300px;
+    height: 300px;
     background-color: rgba(47, 34, 59, 0.801);
     text-align: center;
     padding: 55px 25px;

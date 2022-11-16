@@ -287,6 +287,7 @@ form input{
     background-size: cover;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
     
 }
 
@@ -426,7 +427,7 @@ font-size: 10px;
 color: #06210a;
 }
 
-/* Enviar Archivos */
+/* Enviar Mensaje */
 
 .contenido #enviar{
     margin-top: 15px;
@@ -435,12 +436,40 @@ color: #06210a;
     display: none;
 }
 
-.contenido #recibir{
+.contenido #recibir1{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+}
+
+.contenido #recibir2{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+}
+
+
+.contenido #recibir3{
     width: 100%;
     margin-top: 15px;
     display: none;
 }
 
+
 .contenido nav img{
 height: 90px;
+}
+
+/* notificacion */
+
+#noti{
+    margin-top: 1vh;
+    float: right;
+    display: flex;
+}
+
+#noti img{
+    border-radius: 50%;
+    width: 20px;
+    min-width: 20px;
 }
